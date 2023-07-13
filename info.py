@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '9439609'))
 API_HASH = environ.get('API_HASH', '3a64962f1face2fc285d0bb72587b139')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6389132107:AAFLJsla9c3Aem6gsdtWvaLx9aI4wSxWEO4')
+BOT_TOKEN = environ.get('BOT_TOKEN', '5721899481:AAEkgIxcwqDa1bcRBl2tc7ljoghuxAIUkCE')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
@@ -31,12 +31,12 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://mithun:mithun@bot.2uancfy.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "bot")
+DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001823931348' ))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001926079837' ))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
@@ -63,14 +63,14 @@ LOG_STR += ("Spell Check Mode Is Enabled, bot will be suggesting related movies 
 LOG_STR += (f"MAX_LIST_ELM Found, long list will be shortened to first {MAX_LIST_ELM} elements\n" if MAX_LIST_ELM else "Full List of casts and crew will be shown in imdb template, restrict them by adding a value to MAX_LIST_ELM\n")
 LOG_STR += f"Your current IMDB template is {IMDB_TEMPLATE}"
 
-HOW_TO_DOWNLOAD =  environ.get('HOW_TO_DOWNLOAD', 'https://t.me/requrs')
+HOW_TO_DOWNLOAD =  environ.get('HOW_TO_DOWNLOAD', 'https://t.me/downloadkpslink')
 
 AUTO_DELETE_SECONDS = int(environ.get('AUTO_DELETE_SECONDS', 300))
 
-FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL', LOG_CHANNEL))
+FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL', '-1001772701896')
 
-SHORTNER_SITE =  environ.get('SHORTNER_SITE', 'onepagelink.in') #Put Only Shortner Site domain don't put like this https://tnlink.in/
+SHORTNER_SITE =  environ.get('SHORTNER_SITE', 'v2.kpslink.in') #Put Only Shortner Site domain don't put like this https://tnlink.in/
 
-SHORTNER_API =  environ.get('SHORTNER_API', '9da5a04d91f1d1c6f3570503c56fb4a101fe2f89')
+SHORTNER_API =  environ.get('SHORTNER_API', '8c61880e7ea88984217affa36038ee747900069f')
 
 AUTO_DELETE =  environ.get('AUTO_DELETE', 'True')
