@@ -67,7 +67,7 @@ HOW_TO_DOWNLOAD =  environ.get('HOW_TO_DOWNLOAD', 'https://t.me/downloadkpslink'
 
 AUTO_DELETE_SECONDS = int(environ.get('AUTO_DELETE_SECONDS', 300))
 
-FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL', '-1001772701896')
+FILE_REQ_CHANNEL = int(environ.get('FILE_REQ_CHANNEL', '-1001772701896'))
 
 SHORTNER_SITE =  environ.get('SHORTNER_SITE', 'v2.kpslink.in') #Put Only Shortner Site domain don't put like this https://tnlink.in/
 
